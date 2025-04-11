@@ -1,0 +1,120 @@
+/* Reset & Base Styles */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f8;
+  color: #333;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #fff;
+  padding: 1.5em 2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #275db3;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+#navbar a:hover {
+  background-color: #e5ecff;
+  color: #163b7a;
+}
+
+/* Main Section */
+#main-section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Page Layouts */
+#main-section > div {
+  width: 100%;
+  max-width: 800px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Themed Pages */
+
+.purple{
+  background-color: purple;
+  color:white;
+}
+
+.grey{
+  background-color: grey;
+  color: white;
+}
+
+.red {
+  background-color: #b05f6d;
+  color: white;
+}
+
+.blue {
+  background-color: #275db3;
+  color: white;
+}
+
+.home {
+  background-color: rgb(179, 179, 228);
+  color: white;
+}
+
+/* Footer */
+#footer {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 999;
+}
+
+#footer a {
+  margin: 0 1rem;
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footer a:hover {
+  color: #000;
+}
